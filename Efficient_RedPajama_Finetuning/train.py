@@ -21,8 +21,8 @@ os.environ["TOKENIZERS_PARALLELISM"] = "true"
 ### This dataclass is used to store the configuration for the trainer.
 @dataclass
 class TrainerConfig:
-    batch_size: int = 3
-    micro_batch_size: int = 3
+    batch_size: int = 2
+    micro_batch_size: int = 2
     lora_r: int = 8  #  This controls the rank of the matrices used in LoRA
     lora_alpha: int = 16 # Hyperparameter for LoRA training
     lora_dropout: float = 0.05
